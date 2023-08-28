@@ -2,30 +2,47 @@
 <html>
 <head>
   <title>Analiza Placebo</title>
+       <!DOCTYPE html>
+<html>
+<head>
+  <title>Strona 1</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    .fullscreen {
-      background-image: url("photo2.jpg");
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: 100%;
+      background-color: #FFFFFF; /* Tło białe */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
     }
     .back-button {
       position: absolute;
       bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      right: 50%; /* Wyśrodkowanie horyzontalne */
+      transform: translateX(50%); /* Wyśrodkowanie horyzontalne */
+      background-color: #FFD700; /* Kolor żółty pasujący do Entresto */
+      color: #FFFFFF;
+      font-size: 14px; /* Mniejsza czcionka */
+      border: none;
+      border-radius: 10px;
+      padding: 8px 16px; /* Mniejsze odstępy wewnętrzne */
+      cursor: pointer;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Lekka cień */
+      z-index: 1;
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
   </style>
 </head>
 <body>
-  <div class="fullscreen"></div>
+  <!-- Zawartość strony 1 -->
+  
   <button class="back-button" onclick="window.location.href='index.html'">Wróć do Strony Głównej</button>
 </body>
+</html>
+       
+      </div>
+    </div>
+  </body>
 </html>
